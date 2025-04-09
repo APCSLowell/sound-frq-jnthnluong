@@ -45,7 +45,7 @@ public class Sound
     while(samples[n] == 0){
       n++;
     }
-    int [] newSamples = new int[samples-n]
+    int [] newSamples = new int[samples.length-n]
       for(int i = 0; i < samples.length-n; i++){
       newSamples[i] = samples[i+n];
     }
