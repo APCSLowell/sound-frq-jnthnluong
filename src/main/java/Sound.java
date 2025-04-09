@@ -16,7 +16,8 @@ public class Sound
   public int limitAmplitude(int limit)
   {  
     /* to be implemented in part (a) */
-    for(int count = 0; i < samples.length; i ++){
+    int count = 0;
+    for(int i= 0; i < samples.length; i ++){
       if(samples[i]) > limit){
         count++;
         samples[i] = limit;
@@ -27,6 +28,7 @@ public class Sound
       }
     }
     return count;
+    
   }
 
 
