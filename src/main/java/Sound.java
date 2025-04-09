@@ -24,7 +24,7 @@ public class Sound
         
       }else if(samples[i] < -limit){
         count++;
-        samples[i] = -limit
+        samples[i] = -limit;
       }
     }
     return count;
