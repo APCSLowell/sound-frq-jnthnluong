@@ -40,19 +40,13 @@ public class Sound
   {
     /* to be implemented in part (b) */
     int silenceCount = 0; 
-    for(int i = 0; i < samples.length; i++){
-      if(samples[i] == 0){
-        silenceCount++;
-      }else{
-        break;
-      }
+    int n = 0;
+    while(samples[n] == 0){
+      n++;
     }
-    int[] newSamples = new int[samples.length-silenceCount];
-    int count = 0;
-    for(int i = silenceCount; i < samples.length; i++){
-      newSamples[count] = samples[i];
-      count++;
+    int [] newSamples = new int[samples-n]
+      for(int i = 0; i < samples.length-n; i++){
+      newSamples[i] = samples[i+n];
     }
-  }
-  samples = newSamples;
+    samples = newSamples;
 }
